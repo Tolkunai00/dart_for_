@@ -92,6 +92,45 @@ void main() {
   if (choices == '1') {
     print('Ты пошел налево и встретил врага!');
     print('Выбери что ты будешь сделать (1. Атаковать, 2. Убежать):');
-    
-  }  
+    String action = stdin.readLineSync() ?? '';
+    if (action == '1'){
+      print('Ты победил врага');
+      print('Твое здоровье: $healthy');
+
+      print('Ты нашел сундук выбери (1. Открыть, 2. Игнорировать):');
+      String chestAction = stdin.readLineSync() ?? '';
+      if (chestAction == '1'){
+        print('Ты открыл сундук и нашел ключ!');
+      }else if (chestAction == '2'){
+        print('тЫ проигнорировал сундук и пошел дальше');
+      }else {
+        print('Неверная каманда!');
+      }
+    }
+    }
+      else if (choices == '2'){
+      print('Ты пошел нараво и нашел кльюч!');
+      haskey = true;
+      print('Перед тобой ловушка (1. Перепрыгнуть, 2. Пройдти через нее):');
+      String trapAction = stdin.readLineSync() ?? '';
+      if (trapAction == '1'){
+        print('Ты перепрыгнул через ловушку и продолжайешь путь');
+      } else if (trapAction == '2'){
+        healthy -= 60;
+        print('Ты попал в ловущку и потерял 60 здоровья');
+        print('Tвое здоровья: $healthy');
+      }else {
+        print('Неверная каманда!');
+      }
+  }
+      print('===========================');
+      print('Перед тобой закрытая дверь');
+      if (haskey && healthy >= 50){
+        print('Победа! Ты открыл дверь и добрался из замка!');
+      }else {
+        print('Не удалось открыть дверь и ты остался в замке!');
+        print('Игра окончена!');
+      }
+      print('Твое здоровье: $healthy');
+      print('Есть ключь: $haskey');
 }
