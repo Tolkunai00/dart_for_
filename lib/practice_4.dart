@@ -2,51 +2,51 @@ import 'dart:io';
 void main() {
 
   //задача 1
-  // List<String> cities = [
-  //   'Бишкек', 'баткен', 'ОШ', 'Джала-Абад', 'Чуй'
-  // ];
-  // print('Общий город: $cities');
-  // print('Первый город: ${cities.first}');
-  // print('Общий количество: ${cities.length}');
-  // print('Последний город: ${cities.last}');
+  List<String> cities = [
+    'Бишкек', 'баткен', 'ОШ', 'Джала-Абад', 'Чуй'
+  ];
+  print('Общий город: $cities');
+  print('Первый город: ${cities.first}');
+  print('Общий количество: ${cities.length}');
+  print('Последний город: ${cities.last}');
 
 
-  //задача 2
-  // List<String> words = [];
-  // for (int i=0; i<3; i++){
-  //   print('Введите имя: ');
-  //   String? name = stdin.readLineSync() ?? '';
-  //   words.add(name);
-  // }
-  // print('Список имен: $words');
+  // задача 2
+  List<String> words = [];
+  for (int i=0; i<3; i++){
+    print('Введите имя: ');
+    String? name = stdin.readLineSync() ?? '';
+    words.add(name);
+  }
+  print('Список имен: $words');
 
   //задача 3
-  // List<int> grades = [4, 5, 3, 5, 4, 5, 2];
-  // int sum = 0;
-  // for (int i = 0; i<grades.length; i++){
-  //   sum = sum + grades[i];
-  // }
-  // double avareage = sum / grades.length;
-  // print('Список оценок: $grades');
-  // print('Сумма оценок: $sum');
-  // print('Средний балл: $avareage');
+  List<int> grades = [4, 5, 3, 5, 4, 5, 2];
+  int sum = 0;
+  for (int i = 0; i<grades.length; i++){
+    sum = sum + grades[i];
+  }
+  double avareage = sum / grades.length;
+  print('Список оценок: $grades');
+  print('Сумма оценок: $sum');
+  print('Средний балл: $avareage');
 
 
 //задача 4
-  // Map<String, int> products = {
-  //   'Ноутбук': 10,
-  //   'Телефон': 15,
-  //   'Наушник': 20,
-  //   'Мышка': 8, 
-  //   'Клавиатура': 12
-  // };
-  // print('Введите название товара:');
-  // String product = stdin.readLineSync()!;
-  // if (products.containsKey(product)){
-  //   print('Количество на складе: ${products[product]}');
-  // }else {
-  //   print('Такого товара нет на складе');
-  // }
+  Map<String, int> products = {
+    'Ноутбук': 10,
+    'Телефон': 15,
+    'Наушник': 20,
+    'Мышка': 8, 
+    'Клавиатура': 12
+  };
+  print('Введите название товара:');
+  String product = stdin.readLineSync()!;
+  if (products.containsKey(product)){
+    print('Количество на складе: ${products[product]}');
+  }else {
+    print('Такого товара нет на складе');
+  }
   
 
   //техническое задание 
