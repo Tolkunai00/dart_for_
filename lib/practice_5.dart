@@ -1,31 +1,31 @@
 
 //задача 1
-// double calculateArea(double width, double heigth){
-//     return width * heigth;
-// }
+double calculateArea(double width, double heigth){
+    return width * heigth;
+}
 void main(){
-    // double results = calculateArea(5.0, 10.0);
-    // print('Площать прямоугольника: $results');
+    double results = calculateArea(5.0, 10.0);
+    print('Площать прямоугольника: $results');
 
 
 //задача 2
-// double calculateArea({
-//     required double width, required double heigth,
-// }) => width * heigth;
-// print(calculateArea(width: 5.0, heigth: 10.0));
+double calculateAreas({
+    required double width, required double heigth,
+}) => width * heigth;
+print(calculateAreas(width: 5.0, heigth: 10.0));
 
 
 
 //задача 3
-    // List<int> numbers = [2, -5, 8, -1, 10, 4];
-    // List<int> positive = numbers.where((number) => number > 0).toList();
-    // print(positive);
+    List<int> numbers = [2, -5, 8, -1, 10, 4];
+    List<int> positive = numbers.where((number) => number > 0).toList();
+    print(positive);
 
 
 //задача 4
-//   List<String> words = ['apple', 'banana', 'kiwi'];
-//   List<int> lengths = words.map((word) => word.length).toList();
-//   print(lengths);
+  List<String> words = ['apple', 'banana', 'kiwi'];
+  List<int> lengths = words.map((word) => word.length).toList();
+  print(lengths);
 
 
 // Техническое задание для самостоятельной работы
